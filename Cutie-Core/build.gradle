@@ -1,0 +1,71 @@
+/*
+ * Copyright 2022 RandX <010and1001@gmail.com>
+ *
+ * This file is part of Cutie.
+ *
+ * Cutie is free software: you can redistribute it and/or modify it under the terms of
+ * the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ *
+ * Cutie is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with Cutie.
+ * If not, see <https://www.gnu.org/licenses/>.
+ *
+ */
+plugins {
+    id 'org.jetbrains.kotlin.multiplatform'
+    id 'org.jetbrains.kotlin.native.cocoapods'
+    id 'com.android.library'
+}
+
+kotlin {
+    android()
+
+    ios()
+    cocoapods {
+        version '0.1.0'
+        summary = 'Cutie Functionalities'
+        homepage = 'https://github.com/RandX829/Cutie'
+        name = 'CutieCore'
+        frameworkName = 'CutieCore'
+        ios.deploymentTarget = "14.0"
+        podfile = project.file("../Cutie-iOS/Podfile")
+    }
+
+    sourceSets {
+        commonMain {
+            dependencies {
+
+            }
+        }
+        commonMainTest {
+            dependencies {
+                implementation(kotlin("test-common"))
+                implementation(kotlin("test-annotations-common"))
+            }
+        }
+        androidMain {
+            dependencies {
+
+            }
+        }
+        androidTest {
+            dependencies {
+                implementation(kotlin("test-junit"))
+                implementation("junit:junit:4.13.2")
+            }
+        }
+    }
+}
+
+android {
+    compileSdk = COMPILE_SDK
+    sourceSets.main.manifest.srcFile("src/androidMain/AndroidManifest.xml")
+    defaultConfig {
+        minSdk = MIN_SDK
+        targetSdk = TARGET_SDK
+    }
+}

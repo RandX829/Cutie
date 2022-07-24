@@ -1,0 +1,12 @@
+### Groovy ###
+# .gitignore created from Groovy contributors in https://github.com/apache/groovy/blob/master/.gitignore
+
+.idea/
+.gradle/
+build/
+local.properties
+
+*.DS_Store
+Network Trash Folder
+Temporary Items
+

@@ -1,0 +1,6 @@
+framework module Pods_Cutie {
+  umbrella header "Pods-Cutie-umbrella.h"
+
+  export *
+  module * { export * }
+}

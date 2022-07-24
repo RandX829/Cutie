@@ -1,0 +1,16 @@
+PODS:
+  - CutieCore (0.1.0)
+
+DEPENDENCIES:
+  - CutieCore (from `../Cutie-Core`)
+
+EXTERNAL SOURCES:
+  CutieCore:
+    :path: "../Cutie-Core"
+
+SPEC CHECKSUMS:
+  CutieCore: 7bd7f2eb01eeae0d393b0a6861ec7e2fd204db09
+
+PODFILE CHECKSUM: 7a4e1a6ab17ebec4f16ac0432f63f29bc92dd2c5
+
+COCOAPODS: 1.10.2
