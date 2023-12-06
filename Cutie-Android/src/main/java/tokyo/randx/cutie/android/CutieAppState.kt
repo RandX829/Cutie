@@ -17,18 +17,22 @@
  */
 package tokyo.randx.cutie.android
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Stable
+import androidx.compose.runtime.remember
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+@Stable
+class CutieAppState(
+    val navController: NavHostController
+//TODO    val coroutineScope: CoroutineScope,
+//TODO    networkMonitor: NetworkMonitor
+)
 
-        setContent {
-            CutieApp()
-        }
-    }
+@Composable
+fun rememberCutieAppState(
+    navController: NavHostController = rememberNavController()
+): CutieAppState = remember(navController) {
+    CutieAppState(navController)
 }

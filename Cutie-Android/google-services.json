@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "Your Project Number",
+    "project_id": "Your Project ID",
+    "storage_bucket": "Your Project Storage Bucket"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "Your App ID",
+        "android_client_info": {
+          "package_name": "Your Android App Package Name"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "Your Client ID",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "Your Key"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "Your Client ID",
+              "client_type": 3
+            },
+            {
+              "client_id": "Your Client ID",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Your iOS App Bundle ID"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2023 RandX <010and1001@gmail.com>
+
+This file is part of Cutie.
+
+Cutie is free software: you can redistribute it and/or modify it under the terms of
+the GNU Affero General Public License as published by the Free Software Foundation,
+either version 3 of the License, or (at your option) any later version.
+
+Cutie is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with Cutie.
+If not, see <https://www.gnu.org/licenses/>.
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tokyo.randx.cutie.android">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:label= "@string/app_name"
+        android:name=".CutieApplication"
         android:allowBackup="true"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true">
+        android:supportsRtl="true"
+        android:theme="@style/CutieTheme">
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-</manifest> 
+
+</manifest>

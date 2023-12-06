@@ -1,0 +1,59 @@
+[versions]
+# Build
+min-sdk = "26"
+target-sdk = "34"
+version-code = "1"
+version-name = "0.1.0"
+namespace = "tokyo.randx.cutie.android"
+cocoapods-version = "0.1.0"
+cocoapods-summary = "Cutie Core Functionality"
+cocoapods-homepage = "https://github.com/RandX829/Cutie"
+cocoapods-name = "CutieCore"
+cocoapods-ios-deployment-target = "15.0"
+
+# Kotlin
+kotlin = "1.9.10"
+ksp = "1.9.10-1.0.13"
+# Android Gradle Plugin(AGP)
+android-gradle-plugin = "7.4.2"
+# Room
+room = "2.5.2"
+# Compose
+navigation-compose = "2.6.0"
+compose = "1.5.3"
+constraintlayout-compose = "1.0.1"
+lifecycle-runtime-compose = "2.6.2"
+# Material
+material3 = "1.1.2"
+# Hilt
+com-google-dagger-hilt-android = "2.48.1"
+hilt-navigation-compose = "1.0.0"
+# Google Services(GMS)
+com-google-gms-google-services = "4.3.15"
+firebase-firestore-ktx = "24.8.1"
+
+[libraries]
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout-compose" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle-runtime-compose" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "com-google-dagger-hilt-android" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "com-google-dagger-hilt-android" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebase-firestore-ktx" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+com-android-library = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+org-jetbrains-kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+org-jetbrains-kotlin-native-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "com-google-dagger-hilt-android" }
+com-google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "com-google-gms-google-services" }

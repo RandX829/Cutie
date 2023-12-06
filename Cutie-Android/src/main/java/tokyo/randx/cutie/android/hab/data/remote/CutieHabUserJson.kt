@@ -15,20 +15,17 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
+package tokyo.randx.cutie.android.hab.data.remote
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+import tokyo.randx.cutie.hab.CutieHabUser
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+data class CutieHabUserJson(
+    val uid: Int = 0,
+    val name: String = String()
+)
 
-        setContent {
-            CutieApp()
-        }
-    }
+fun CutieHabUser.asJson(): CutieHabUserJson = CutieHabUserJson(uid = uid, name = name)
+
+fun List<CutieHabUserJson>.asModel(): List<CutieHabUser> = map {
+    CutieHabUser(uid = it.uid, name = it.name)
 }

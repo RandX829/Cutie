@@ -2,6 +2,7 @@
 .gradle/
 build/
 local.properties
+pro/
 
 *.DS_Store
 Network Trash Folder

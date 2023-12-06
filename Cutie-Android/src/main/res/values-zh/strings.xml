@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hab_create">添加</string>
+    <string name="update">更新</string>
+    <string name="cancel">取消</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="hab_category">分类</string>
+    <string name="hab_category_savings">存款</string>
+    <string name="hab_category_housing">住房</string>
+    <string name="hab_category_electricity">电费</string>
+    <string name="hab_category_water">水费</string>
+    <string name="hab_category_gas">燃气费</string>
+    <string name="hab_category_cellphone">电话费</string>
+    <string name="hab_category_internet">网络</string>
+    <string name="hab_category_insurance">保险</string>
+    <string name="hab_category_television">电视</string>
+    <string name="hab_category_groceries">食品</string>
+    <string name="hab_category_eating_out">下馆子</string>
+    <string name="hab_category_transportation">交通费</string>
+    <string name="hab_category_household_supplies">日用品</string>
+    <string name="hab_category_clothing">衣服</string>
+    <string name="hab_category_beauty">美容</string>
+    <string name="hab_category_medical">医疗</string>
+    <string name="hab_category_recreation">娱乐</string>
+    <string name="hab_category_travel">旅行</string>
+    <string name="hab_category_social">社交</string>
+    <string name="hab_category_special">临时支出</string>
+    <string name="hab_category_education">教育</string>
+    <string name="hab_category_automotive">汽车</string>
+    <string name="hab_category_donation">捐款</string>
+    <string name="hab_category_tax">tax</string>
+    <string name="hab_category_pension_ideco">养老保险（iDeCo）</string>
+    <string name="hab_category_unknown">不明</string>
+    <string name="hab_user">付款人</string>
+    <string name="hab_payment_method">支付方式</string>
+    <string name="hab_payment_method_cash">现金</string>
+    <string name="hab_payment_method_credit_card">信用卡</string>
+    <string name="hab_amount">金额</string>
+    <string name="hab_memo">备忘</string>
+    <string name="hab_category_pension_sonylife">养老保险（Sony Life）</string>
+    <string name="feature_hab">家庭账本</string>
+    <string name="hab_total">共计:</string>
+    <string name="currency_symbol">￥</string>
+    <string name="all">全部</string>
+    <string name="delete">删除</string>
+
+</resources>

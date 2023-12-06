@@ -17,18 +17,23 @@
  */
 package tokyo.randx.cutie.android
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Scaffold
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import tokyo.randx.cutie.android.ui.theme.CutieTheme
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        setContent {
-            CutieApp()
+@Composable
+fun CutieApp(
+    modifier: Modifier = Modifier,
+    appState: CutieAppState = rememberCutieAppState()
+) {
+    CutieTheme {
+        Scaffold { innerPadding ->
+            CutieNavHost(
+                modifier = modifier.padding(innerPadding),
+                navController = appState.navController
+            )
         }
     }
 }

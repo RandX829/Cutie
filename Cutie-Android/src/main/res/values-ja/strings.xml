@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hab_create">追加</string>
+    <string name="update">更新</string>
+    <string name="cancel">キャンセル</string>
+    <string name="date">日付</string>
+    <string name="time">時間</string>
+
+    <string name="hab_category">カテゴリ</string>
+    <string name="hab_category_savings">貯金</string>
+    <string name="hab_category_housing">住居</string>
+    <string name="hab_category_electricity">電気</string>
+    <string name="hab_category_water">水道</string>
+    <string name="hab_category_gas">ガス</string>
+    <string name="hab_category_cellphone">携帯電話</string>
+    <string name="hab_category_internet">光回線</string>
+    <string name="hab_category_insurance">保険</string>
+    <string name="hab_category_television">テレビ</string>
+    <string name="hab_category_groceries">食料品</string>
+    <string name="hab_category_eating_out">外食</string>
+    <string name="hab_category_transportation">交通費</string>
+    <string name="hab_category_household_supplies">日用品</string>
+    <string name="hab_category_clothing">洋服</string>
+    <string name="hab_category_beauty">美容・コスメ</string>
+    <string name="hab_category_medical">医療</string>
+    <string name="hab_category_recreation">娯楽</string>
+    <string name="hab_category_travel">旅行</string>
+    <string name="hab_category_social">交際費</string>
+    <string name="hab_category_special">一時出費</string>
+    <string name="hab_category_education">教育</string>
+    <string name="hab_category_automotive">車</string>
+    <string name="hab_category_donation">寄付</string>
+    <string name="hab_category_tax">税金</string>
+    <string name="hab_category_pension_ideco">年金（iDeCo）</string>
+    <string name="hab_category_unknown">未定義</string>
+    <string name="hab_user">支払い担当</string>
+    <string name="hab_payment_method">支払方法</string>
+    <string name="hab_payment_method_cash">現金</string>
+    <string name="hab_payment_method_credit_card">クレジットカード</string>
+    <string name="hab_amount">金額</string>
+    <string name="hab_memo">メモ</string>
+    <string name="hab_category_pension_sonylife">年金（ソニー生命）</string>
+    <string name="feature_hab">家計簿</string>
+    <string name="hab_total">合計:</string>
+    <string name="currency_symbol">￥</string>
+    <string name="all">すべて</string>
+    <string name="delete">削除</string>
+
+
+</resources>

@@ -15,20 +15,20 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
+package tokyo.randx.cutie.android.util
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+import java.util.Calendar
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+object CutieDateTimeProvider {
 
-        setContent {
-            CutieApp()
-        }
+    fun getDatetime(): List<Int> {
+        val calendar = Calendar.getInstance()
+        val year = calendar[Calendar.YEAR]
+        val month = calendar[Calendar.MONTH] + 1
+        val dayOfMonth = calendar[Calendar.DAY_OF_MONTH]
+        val hourOfDay = calendar[Calendar.HOUR_OF_DAY] // 24h
+        val minute = calendar[Calendar.MINUTE]
+
+        return listOf(year, month, dayOfMonth, hourOfDay, minute)
     }
 }

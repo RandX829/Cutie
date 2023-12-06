@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cutie</string>
+    <string name="app_name" translatable="false">Cutie</string>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="cancel">Cancel</string>
+    <string name="all">All</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="currency_symbol">＄</string>
+
+    <string name="feature_hab">Hab</string>
+    <string name="hab_create">Add</string>
+    <string name="hab_total">Total:</string>
+    <string name="hab_category">Category</string>
+    <string name="hab_category_savings">Savings</string>
+    <string name="hab_category_housing">Housing</string>
+    <string name="hab_category_electricity">Electricity</string>
+    <string name="hab_category_water">Water</string>
+    <string name="hab_category_gas">Gas</string>
+    <string name="hab_category_cellphone">Cellphone</string>
+    <string name="hab_category_internet">Internet</string>
+    <string name="hab_category_insurance">Insurance</string>
+    <string name="hab_category_television">Television</string>
+    <string name="hab_category_groceries">Groceries</string>
+    <string name="hab_category_eating_out">Eating Out</string>
+    <string name="hab_category_transportation">Transportation</string>
+    <string name="hab_category_household_supplies">Household Supplies</string>
+    <string name="hab_category_clothing">Clothing</string>
+    <string name="hab_category_beauty">Beauty</string>
+    <string name="hab_category_medical">Medical</string>
+    <string name="hab_category_recreation">Recreation</string>
+    <string name="hab_category_travel">Travel</string>
+    <string name="hab_category_social">Social</string>
+    <string name="hab_category_special">Special</string>
+    <string name="hab_category_education">Education</string>
+    <string name="hab_category_automotive">Automotive</string>
+    <string name="hab_category_donation">Donation</string>
+    <string name="hab_category_tax">Tax</string>
+    <string name="hab_category_pension_ideco">Pension(iDeCo)</string>
+    <string name="hab_category_pension_sonylife">Pension(Sony Life)</string>
+    <string name="hab_category_unknown">Unknown</string>
+
+    <string name="hab_user">Payer</string>
+    <string name="hab_payment_method">Payment Method</string>
+    <string name="hab_payment_method_cash">Cash</string>
+    <string name="hab_payment_method_credit_card">Credit Card</string>
+    <string name="hab_amount">Amount</string>
+    <string name="hab_memo">Memo</string>
+
 </resources>

@@ -15,20 +15,15 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
+package tokyo.randx.cutie.hab
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
-
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        setContent {
-            CutieApp()
-        }
-    }
-}
+data class CutieHabRecord(
+    val id: String = String(),
+    val date: String = String(),
+    val time: String = String(),
+    val categoryId: Int = 99,
+    val uid: Int = 0,
+    val paymentMethodId: Int = 0,
+    val amount: Int = 0,
+    val memo: String = String()
+)

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 RandX <010and1001@gmail.com>
+ * Copyright 2022 RandX <010and1001@gmail.com>
  *
  * This file is part of Cutie.
  *
@@ -15,20 +15,22 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
-
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
-
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        setContent {
-            CutieApp()
-        }
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Cutie"
+
+include(":Cutie-Core")
+include(":Cutie-Android")

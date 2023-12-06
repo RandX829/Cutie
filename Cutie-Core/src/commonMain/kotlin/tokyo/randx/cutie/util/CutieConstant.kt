@@ -15,20 +15,21 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
+package tokyo.randx.cutie.util
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+object CutieConstant {
+    const val REGEX_PATTERN_NUMBER = "\\D"
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        setContent {
-            CutieApp()
-        }
-    }
+    const val DATE_SEPARATOR = "-"
+    const val YEAR_DIGITS = 4
+    const val MONTH_DIGITS = 2
+    const val DAY_DIGITS = 2
+    const val TIME_SEPARATOR = ":"
+    const val HOUR_DIGITS = 2
+    const val MINUTE_DIGITS = 2
+    const val YEAR = 0
+    const val MONTH = 1
+    const val DAY = 2
+    const val HOUR = 3
+    const val MINUTE = 4
 }

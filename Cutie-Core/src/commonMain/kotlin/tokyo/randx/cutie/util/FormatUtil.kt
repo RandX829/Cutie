@@ -15,20 +15,11 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android
+package tokyo.randx.cutie.util
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import dagger.hilt.android.AndroidEntryPoint
+object FormatUtil {
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    fun formatZerosLeadingNumber(num: Int, lengthOfOutput: Int): String =
+        num.toString().padStart(lengthOfOutput, '0')
 
-        setContent {
-            CutieApp()
-        }
-    }
 }
