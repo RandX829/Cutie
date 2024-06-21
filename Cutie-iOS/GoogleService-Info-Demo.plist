@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>Your Client ID</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>Your Reversed Client ID</string>
+	<key>API_KEY</key>
+	<string>Your API Key</string>
+	<key>GCM_SENDER_ID</key>
+	<string>Your GCM Sender ID</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Your Bundle ID</string>
+	<key>PROJECT_ID</key>
+	<string>Your Project ID</string>
+	<key>STORAGE_BUCKET</key>
+	<string>Your Storage Bucket</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>Your Google App ID</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+</dict>
+</plist>

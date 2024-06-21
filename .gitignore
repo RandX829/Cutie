@@ -7,4 +7,6 @@ pro/
 *.DS_Store
 Network Trash Folder
 Temporary Items
-
+xcuserdata/
+Pods/
+GoogleService-Info.plist
