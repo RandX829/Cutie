@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
 		CEEB89BA37E9EBF45C85812C1BA676B9 /* CutieCore */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9F03CEE7E51B977C9505CD67D007CB1B /* Build configuration list for PBXAggregateTarget "CutieCore" */;
+			buildConfigurationList = 9A1537606E31A156A2ED43D9FEB6422D /* Build configuration list for PBXAggregateTarget "CutieCore" */;
 			buildPhases = (
-				D2B6C9286C733B3679F7FE095F92C8D9 /* [CP-User] Build CutieCore */,
+				C020845DE35A09F02862794620C13235 /* [CP-User] Build CutieCore */,
+				EA538C0319A826642E83DFEFFBF5007E /* [CP] Copy dSYMs */,
 			);
 			dependencies = (
 			);
@@ -20,13 +21,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2AB7BA15BA42269B37AF50FD17A8F9C2 /* Pods-Cutie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EFB8AB050D2FDE44F4D80FFA886C7 /* Pods-Cutie-dummy.m */; };
-		A9842466B6E1258B165651B5AF722966 /* Pods-Cutie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA972711302EF83D61B003415B6E6D8 /* Pods-Cutie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEDFA21866E3D49986D9D0E3C6DC0A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1D39CA55169926468B9AC3923DBDC095 /* Pods-Cutie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D17D10C5A46EAD6382D94F90196127 /* Pods-Cutie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A796841870AA41CA38889DF8C822748F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DD5D5BAF4F7757F7B2E982CFC874F608 /* Pods-Cutie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B88FF51E0B2547A01BA608266F802 /* Pods-Cutie-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D5FE81AC89B93F367E482CD36FF3A796 /* PBXContainerItemProxy */ = {
+		F01612488F09F873FCCEDAFF0AEBCC2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,60 +37,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04DA7F56761959C82931C420EA5EE9E5 /* CutieCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CutieCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		117CB9AE92A6B8A75E136206AF8C3B4C /* Pods-Cutie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-acknowledgements.plist"; sourceTree = "<group>"; };
-		42A71EC9A2F4F1A7FB46BA8842FB2D26 /* Pods-Cutie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cutie-acknowledgements.markdown"; sourceTree = "<group>"; };
-		60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cutie.framework; path = "Pods-Cutie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A9862D40DFC19AC4AB51C85CE6F320 /* CutieCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.release.xcconfig; sourceTree = "<group>"; };
+		0DD41A157421499E1EA9334DD4998DEA /* CutieCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CutieCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24D17D10C5A46EAD6382D94F90196127 /* Pods-Cutie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cutie-umbrella.h"; sourceTree = "<group>"; };
+		3F51602DA6C37C4DD7F0BD263C478BD2 /* Pods-Cutie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC2B1886B02763711A54843AF75D8CC /* Pods-Cutie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cutie-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Cutie"; path = Pods_Cutie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6243111ECD40A361996736900C626536 /* Pods-Cutie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-Info.plist"; sourceTree = "<group>"; };
+		6B20A9C5B8FE5592E6CAB0DCF3E93419 /* Pods-Cutie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-acknowledgements.plist"; sourceTree = "<group>"; };
+		714B88FF51E0B2547A01BA608266F802 /* Pods-Cutie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cutie-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E5EFB8AB050D2FDE44F4D80FFA886C7 /* Pods-Cutie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cutie-dummy.m"; sourceTree = "<group>"; };
-		8095E8596C00A9B9FFB90929F1B19547 /* Pods-Cutie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-Info.plist"; sourceTree = "<group>"; };
-		8223A6827852C6054D6CCF5DC2253B9C /* CutieCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.debug.xcconfig; sourceTree = "<group>"; };
-		8868CB30E579C2E3603FDDD40BA40C1B /* Pods-Cutie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.debug.xcconfig"; sourceTree = "<group>"; };
+		80EB8755A3CFF96BE9A3A7A43EF3DBBF /* CutieCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.debug.xcconfig; sourceTree = "<group>"; };
+		8C690273D3B767D0B7E6C6C837E1E778 /* Pods-Cutie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cutie.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AFA972711302EF83D61B003415B6E6D8 /* Pods-Cutie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cutie-umbrella.h"; sourceTree = "<group>"; };
-		B40A3EA8A209EFDA47EA06AB5D129969 /* CutieCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.release.xcconfig; sourceTree = "<group>"; };
-		DC8DFCB5DA376A2A6E2B988CEEC3A551 /* Pods-Cutie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cutie.modulemap"; sourceTree = "<group>"; };
-		E3C654A42533B6D11FFC978478780983 /* CutieCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CutieCore.framework; path = build/cocoapods/framework/CutieCore.framework; sourceTree = "<group>"; };
-		E577096E71594EE80F058C4B00DF40E0 /* Pods-Cutie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.release.xcconfig"; sourceTree = "<group>"; };
+		D83CD7C7B4CF4F28EFE577B2678A9BAD /* Pods-Cutie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cutie-frameworks.sh"; sourceTree = "<group>"; };
+		E492AC3FFC8850C4AEB0803168D00DFB /* CutieCore-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CutieCore-copy-dsyms.sh"; sourceTree = "<group>"; };
+		F612C35848B398B5A5438A7677B54C50 /* Pods-Cutie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.release.xcconfig"; sourceTree = "<group>"; };
+		FAE193DCD946691290591DB6976D040E /* CutieCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CutieCore.framework; path = build/cocoapods/framework/CutieCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4719EC4B9A16B93BDC22B37082FD1280 /* Frameworks */ = {
+		45A03619F1B9E63A0BF320915F5F7E1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDFA21866E3D49986D9D0E3C6DC0A95 /* Foundation.framework in Frameworks */,
+				A796841870AA41CA38889DF8C822748F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B2599497C22B1641F7191ABA97ACF80 /* CutieCore */ = {
+		105E9F65D418EC908A90458A131F4A34 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49AFE7337667F1F38A2C5FC7EAAE7727 /* Frameworks */,
-				6A54D634443ADC44B81817F1A0B96553 /* Pod */,
-				B96C205A4735033B1DC2666350CBE185 /* Support Files */,
+				E492AC3FFC8850C4AEB0803168D00DFB /* CutieCore-copy-dsyms.sh */,
+				80EB8755A3CFF96BE9A3A7A43EF3DBBF /* CutieCore.debug.xcconfig */,
+				09A9862D40DFC19AC4AB51C85CE6F320 /* CutieCore.release.xcconfig */,
 			);
-			name = CutieCore;
-			path = "../../Cutie-Core";
+			name = "Support Files";
+			path = "../Cutie-iOS/Pods/Target Support Files/CutieCore";
 			sourceTree = "<group>";
 		};
-		323995DE4D6AF3B98EB3A49711E34242 /* Products */ = {
+		3B45200C97DE6A8D2535EC4BCECCC79A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */,
+				62C3E06A30AE93110BC2E696A68A0A73 /* Pods-Cutie */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		42DF06D92B09C80658E413327EB6E38B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		49AFE7337667F1F38A2C5FC7EAAE7727 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E3C654A42533B6D11FFC978478780983 /* CutieCore.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -100,54 +103,56 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6A54D634443ADC44B81817F1A0B96553 /* Pod */ = {
+		5952A3ED3B0A40121CBFDDC3193D1985 /* CutieCore */ = {
 			isa = PBXGroup;
 			children = (
-				04DA7F56761959C82931C420EA5EE9E5 /* CutieCore.podspec */,
+				A03E4DA91D0AACC12C9CFB3A2836739D /* Frameworks */,
+				6003E9F824FE4A7D69866A193A0A02E5 /* Pod */,
+				105E9F65D418EC908A90458A131F4A34 /* Support Files */,
+			);
+			name = CutieCore;
+			path = "../../Cutie-Core";
+			sourceTree = "<group>";
+		};
+		6003E9F824FE4A7D69866A193A0A02E5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0DD41A157421499E1EA9334DD4998DEA /* CutieCore.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		789A3AFCF77FD2C3D03E53308FC1D6DB /* Pods-Cutie */ = {
+		62C3E06A30AE93110BC2E696A68A0A73 /* Pods-Cutie */ = {
 			isa = PBXGroup;
 			children = (
-				DC8DFCB5DA376A2A6E2B988CEEC3A551 /* Pods-Cutie.modulemap */,
-				42A71EC9A2F4F1A7FB46BA8842FB2D26 /* Pods-Cutie-acknowledgements.markdown */,
-				117CB9AE92A6B8A75E136206AF8C3B4C /* Pods-Cutie-acknowledgements.plist */,
-				7E5EFB8AB050D2FDE44F4D80FFA886C7 /* Pods-Cutie-dummy.m */,
-				8095E8596C00A9B9FFB90929F1B19547 /* Pods-Cutie-Info.plist */,
-				AFA972711302EF83D61B003415B6E6D8 /* Pods-Cutie-umbrella.h */,
-				8868CB30E579C2E3603FDDD40BA40C1B /* Pods-Cutie.debug.xcconfig */,
-				E577096E71594EE80F058C4B00DF40E0 /* Pods-Cutie.release.xcconfig */,
+				8C690273D3B767D0B7E6C6C837E1E778 /* Pods-Cutie.modulemap */,
+				5AC2B1886B02763711A54843AF75D8CC /* Pods-Cutie-acknowledgements.markdown */,
+				6B20A9C5B8FE5592E6CAB0DCF3E93419 /* Pods-Cutie-acknowledgements.plist */,
+				714B88FF51E0B2547A01BA608266F802 /* Pods-Cutie-dummy.m */,
+				D83CD7C7B4CF4F28EFE577B2678A9BAD /* Pods-Cutie-frameworks.sh */,
+				6243111ECD40A361996736900C626536 /* Pods-Cutie-Info.plist */,
+				24D17D10C5A46EAD6382D94F90196127 /* Pods-Cutie-umbrella.h */,
+				3F51602DA6C37C4DD7F0BD263C478BD2 /* Pods-Cutie.debug.xcconfig */,
+				F612C35848B398B5A5438A7677B54C50 /* Pods-Cutie.release.xcconfig */,
 			);
 			name = "Pods-Cutie";
 			path = "Target Support Files/Pods-Cutie";
 			sourceTree = "<group>";
 		};
+		A03E4DA91D0AACC12C9CFB3A2836739D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE193DCD946691290591DB6976D040E /* CutieCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7B992061E01BB4561FCEE25FEBFD461 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0B2599497C22B1641F7191ABA97ACF80 /* CutieCore */,
+				5952A3ED3B0A40121CBFDDC3193D1985 /* CutieCore */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B96C205A4735033B1DC2666350CBE185 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8223A6827852C6054D6CCF5DC2253B9C /* CutieCore.debug.xcconfig */,
-				B40A3EA8A209EFDA47EA06AB5D129969 /* CutieCore.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Cutie-iOS/Pods/Target Support Files/CutieCore";
-			sourceTree = "<group>";
-		};
-		C93ACEC9A6DD951093849A9C1D90B4C7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				789A3AFCF77FD2C3D03E53308FC1D6DB /* Pods-Cutie */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -156,8 +161,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B7B992061E01BB4561FCEE25FEBFD461 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				323995DE4D6AF3B98EB3A49711E34242 /* Products */,
-				C93ACEC9A6DD951093849A9C1D90B4C7 /* Targets Support Files */,
+				42DF06D92B09C80658E413327EB6E38B /* Products */,
+				3B45200C97DE6A8D2535EC4BCECCC79A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,11 +177,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		80DEF981D430A021BD048D62B0ECBBEC /* Headers */ = {
+		2B6240EA2E5109722E12F30EE76C6DCC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9842466B6E1258B165651B5AF722966 /* Pods-Cutie-umbrella.h in Headers */,
+				1D39CA55169926468B9AC3923DBDC095 /* Pods-Cutie-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,21 +190,21 @@
 /* Begin PBXNativeTarget section */
 		19384460DEAD1FE8499B9B573BD1E217 /* Pods-Cutie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A4528DD133AA5BBED4856122AA487DE /* Build configuration list for PBXNativeTarget "Pods-Cutie" */;
+			buildConfigurationList = 87FDE53CE8C710C5C34CB94F7FBCC314 /* Build configuration list for PBXNativeTarget "Pods-Cutie" */;
 			buildPhases = (
-				80DEF981D430A021BD048D62B0ECBBEC /* Headers */,
-				6B41860E9DC69B019E3653882B1D71AF /* Sources */,
-				4719EC4B9A16B93BDC22B37082FD1280 /* Frameworks */,
-				7170F8B9BE31B584C47B62CD509B1CEF /* Resources */,
+				2B6240EA2E5109722E12F30EE76C6DCC /* Headers */,
+				66744762485621DA8323CAA4BFBBD6A2 /* Sources */,
+				45A03619F1B9E63A0BF320915F5F7E1E /* Frameworks */,
+				A9377B9FC0F23372EBF2CDB3B8C59195 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F860E3D1967F8D5A0614A2D3776EB6B0 /* PBXTargetDependency */,
+				58CEAC9C629A962ACAAF58A2CF973F57 /* PBXTargetDependency */,
 			);
 			name = "Pods-Cutie";
-			productName = "Pods-Cutie";
-			productReference = 60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */;
+			productName = Pods_Cutie;
+			productReference = 60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -208,19 +213,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 323995DE4D6AF3B98EB3A49711E34242 /* Products */;
+			productRefGroup = 42DF06D92B09C80658E413327EB6E38B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -231,7 +236,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7170F8B9BE31B584C47B62CD509B1CEF /* Resources */ = {
+		A9377B9FC0F23372EBF2CDB3B8C59195 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +246,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D2B6C9286C733B3679F7FE095F92C8D9 /* [CP-User] Build CutieCore */ = {
+		C020845DE35A09F02862794620C13235 /* [CP-User] Build CutieCore */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,52 +254,130 @@
 			name = "[CP-User] Build CutieCore";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+		};
+		EA538C0319A826642E83DFEFFBF5007E /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/CutieCore/CutieCore-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/CutieCore/CutieCore-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CutieCore/CutieCore-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6B41860E9DC69B019E3653882B1D71AF /* Sources */ = {
+		66744762485621DA8323CAA4BFBBD6A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB7BA15BA42269B37AF50FD17A8F9C2 /* Pods-Cutie-dummy.m in Sources */,
+				DD5D5BAF4F7757F7B2E982CFC874F608 /* Pods-Cutie-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F860E3D1967F8D5A0614A2D3776EB6B0 /* PBXTargetDependency */ = {
+		58CEAC9C629A962ACAAF58A2CF973F57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CutieCore;
 			target = CEEB89BA37E9EBF45C85812C1BA676B9 /* CutieCore */;
-			targetProxy = D5FE81AC89B93F367E482CD36FF3A796 /* PBXContainerItemProxy */;
+			targetProxy = F01612488F09F873FCCEDAFF0AEBCC2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		046547EDADEF8845C2B8609A3201E641 /* Release */ = {
+		0FF9739879575EDF62676F084244CD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B40A3EA8A209EFDA47EA06AB5D129969 /* CutieCore.release.xcconfig */;
+			baseConfigurationReference = 80EB8755A3CFF96BE9A3A7A43EF3DBBF /* CutieCore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		40929FF8BF45B0188BEF8C488A18770A /* Debug */ = {
+		523522F5E8B99E65A44830F1ACCC8AE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8868CB30E579C2E3603FDDD40BA40C1B /* Pods-Cutie.debug.xcconfig */;
+			baseConfigurationReference = F612C35848B398B5A5438A7677B54C50 /* Pods-Cutie.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -308,7 +391,45 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Cutie/Pods-Cutie-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cutie/Pods-Cutie.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72AEE134E983701D3801AA7BE882639F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F51602DA6C37C4DD7F0BD263C478BD2 /* Pods-Cutie.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cutie/Pods-Cutie-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,45 +450,25 @@
 			};
 			name = Debug;
 		};
-		43292414E2261EAC903784DE845362BE /* Release */ = {
+		C264C59F05D67F82471124AA26FA6906 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E577096E71594EE80F058C4B00DF40E0 /* Pods-Cutie.release.xcconfig */;
+			baseConfigurationReference = 09A9862D40DFC19AC4AB51C85CE6F320 /* CutieCore.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cutie/Pods-Cutie-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cutie/Pods-Cutie.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,111 +534,32 @@
 			};
 			name = Debug;
 		};
-		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		BF973E29A5D41814E63416A5ED91A4B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8223A6827852C6054D6CCF5DC2253B9C /* CutieCore.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A4528DD133AA5BBED4856122AA487DE /* Build configuration list for PBXNativeTarget "Pods-Cutie" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				40929FF8BF45B0188BEF8C488A18770A /* Debug */,
-				43292414E2261EAC903784DE845362BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
-				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
+				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F03CEE7E51B977C9505CD67D007CB1B /* Build configuration list for PBXAggregateTarget "CutieCore" */ = {
+		87FDE53CE8C710C5C34CB94F7FBCC314 /* Build configuration list for PBXNativeTarget "Pods-Cutie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF973E29A5D41814E63416A5ED91A4B0 /* Debug */,
-				046547EDADEF8845C2B8609A3201E641 /* Release */,
+				72AEE134E983701D3801AA7BE882639F /* Debug */,
+				523522F5E8B99E65A44830F1ACCC8AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1537606E31A156A2ED43D9FEB6422D /* Build configuration list for PBXAggregateTarget "CutieCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF9739879575EDF62676F084244CD36 /* Debug */,
+				C264C59F05D67F82471124AA26FA6906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

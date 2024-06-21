@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 RandX <010and1001@gmail.com>
+ * Copyright 2023-2024 RandX <010and1001@gmail.com>
  *
  * This file is part of Cutie.
  *
@@ -15,18 +15,29 @@
  * If not, see <https://www.gnu.org/licenses/>.
  *
  */
-package tokyo.randx.cutie.android.hab.data.remote
 
-import tokyo.randx.cutie.android.hab.data.local.CutieHabRecordEntity
-import tokyo.randx.cutie.hab.CutieHabRecord
+// App Name
+"cutie" = "Cutie";
 
-data class CutieHabRecordJson(
-    val id: String = String(),
-    val memo: String = String()
-)
+// Cross Feature
+"done" = "完了";
+"cancel" = "キャンセル";
 
-fun CutieHabRecord.asJson(): CutieHabRecordJson = CutieHabRecordJson(id = id, memo = memo)
-
-fun List<CutieHabRecordJson>.asEntity(): List<CutieHabRecordEntity> = map {
-    CutieHabRecordEntity(id = it.id, memo = it.memo)
-}
+// Feature Household Account Book
+"hab" = "家計簿";
+"currency_symbol" = "￥";
+"JPY" = "￥";
+"edit" = "編集";
+"total" = "合計: ";
+"date" = "日付";
+"time" = "時間";
+"expense" = "支出";
+"expenses" = "支出一覧";
+"account" = "アカウント";
+"amount" = "金額";
+"memo" = "メモ";
+"category" = "カテゴリ";
+"savings" = "貯蓄";
+"cellphone" = "携帯電話";
+"piggy" = "貯金箱";
+"unknown" = "未分類";

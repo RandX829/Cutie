@@ -1,6 +1,6 @@
 [versions]
 # Build
-min-sdk = "26"
+min-sdk = "29"
 target-sdk = "34"
 version-code = "1"
 version-name = "0.1.0"
@@ -9,7 +9,7 @@ cocoapods-version = "0.1.0"
 cocoapods-summary = "Cutie Core Functionality"
 cocoapods-homepage = "https://github.com/RandX829/Cutie"
 cocoapods-name = "CutieCore"
-cocoapods-ios-deployment-target = "15.0"
+cocoapods-ios-deployment-target = "16.0"
 
 # Kotlin
 kotlin = "1.9.10"
@@ -21,6 +21,8 @@ room = "2.5.2"
 # Compose
 navigation-compose = "2.6.0"
 compose = "1.5.3"
+ui-tooling = "1.5.4"
+ui-tooling-preview-android = "1.5.4"
 constraintlayout-compose = "1.0.1"
 lifecycle-runtime-compose = "2.6.2"
 # Material
@@ -28,13 +30,15 @@ material3 = "1.1.2"
 # Hilt
 com-google-dagger-hilt-android = "2.48.1"
 hilt-navigation-compose = "1.0.0"
-# Google Services(GMS)
+# Google Mobile Services(GMS)
 com-google-gms-google-services = "4.3.15"
 firebase-firestore-ktx = "24.8.1"
 
 [libraries]
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "ui-tooling" }
+androidx-compose-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "ui-tooling-preview-android" }
 androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout-compose" }
 androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
@@ -50,7 +54,7 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
-com-android-library = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+com-android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 org-jetbrains-kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

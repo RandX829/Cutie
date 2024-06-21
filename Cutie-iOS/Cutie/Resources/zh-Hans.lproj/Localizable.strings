@@ -1,0 +1,42 @@
+/*
+ * Copyright 2023-2024 RandX <010and1001@gmail.com>
+ *
+ * This file is part of Cutie.
+ *
+ * Cutie is free software: you can redistribute it and/or modify it under the terms of
+ * the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ *
+ * Cutie is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with Cutie.
+ * If not, see <https://www.gnu.org/licenses/>.
+ *
+ */
+
+// App Name
+"cutie" = "Cutie";
+
+// Cross Feature
+"done" = "完成";
+"cancel" = "取消";
+
+// Feature Household Account Book
+"hab" = "家庭账本";
+"currency_symbol" = "￥";
+"CNY" = "￥";
+"edit" = "编辑";
+"date" = "日期";
+"time" = "时间";
+"total" = "共计: ";
+"expense" = "支出";
+"expenses" = "支出一览";
+"account" = "账户";
+"amount" = "金额";
+"memo" = "备忘";
+"category" = "分类";
+"cellphone" = "手机费";
+"savings" = "储蓄";
+"piggy" = "存钱罐";

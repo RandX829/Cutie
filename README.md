@@ -1,6 +1,6 @@
 # Cutie
 
-A personal Assistant Aimed to release you from tedious tasks.
+A personal Assistant to free you from tedious tasks.
 
 ## Screenshot
 
