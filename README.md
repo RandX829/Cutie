@@ -4,9 +4,11 @@ A personal Assistant to free you from tedious tasks.
 
 ## Screenshot
 
-| Household Account Book(HAB)               |
-|-------------------------------------------|
-| ![HAB](/Cutie-Android/Screenshot/HAB.png) |
+### Household Account Book(HAB)
+
+| Android                                           | iOS                                       |
+|---------------------------------------------------|-------------------------------------------|
+| ![HAB Android](/Cutie-Android/Screenshot/HAB.png) | ![HAB iOS](/Cutie-iOS/Screenshot/HAB.png) |
 
 ## Feature
 
@@ -16,7 +18,7 @@ A personal Assistant to free you from tedious tasks.
 
 ### Multiplatform Framework
 
-- [Kotlin Multiplatform Mobile](https://kotlinlang.org/lp/mobile/)
+- [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
 
 ### Native
 
@@ -49,7 +51,7 @@ A personal Assistant to free you from tedious tasks.
 - [electricity](https://www.flaticon.com/free-icon/lightning_616494) created by Freepik - Flaticon
 - [gas](https://www.flaticon.com/free-icon/flame_4535728) created by Freepik - Flaticon
 - [groceries](https://www.flaticon.com/free-icon/grocery_1261126) created by monkik - Flaticon
-- [household-supplies](https://www.flaticon.com/free-icon/detergent_5564870) created by small.smiles - Flaticon
+- [supplies](https://www.flaticon.com/free-icon/detergent_5564870) created by small.smiles - Flaticon
 - [housing](https://www.flaticon.com/free-icon/house_2163350) created by Freepik - Flaticon
 - [insurance](https://www.flaticon.com/free-icon/health-insurance_4388635) created by iconixar - Flaticon
 - [internet](https://www.flaticon.com/free-icon/wifi_2794952) created by Freepik - Flaticon
@@ -67,7 +69,7 @@ A personal Assistant to free you from tedious tasks.
 
 ## License
 
-Copyright 2022-2023 RandX(<010and1001@gmail.com>)
+Copyright 2022-2024 RandX(<010and1001@gmail.com>)
 
 This file is part of Cutie.
 

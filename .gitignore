@@ -9,4 +9,7 @@ Network Trash Folder
 Temporary Items
 xcuserdata/
 Pods/
+*.ipa
+*.dSYM.zip
+*.dSYM
 GoogleService-Info.plist

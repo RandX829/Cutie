@@ -27,16 +27,15 @@ import tokyo.randx.cutie.hab.CutieHabConstant.INDEX_MONTH
 import tokyo.randx.cutie.hab.CutieHabConstant.INDEX_USER
 import tokyo.randx.cutie.hab.CutieHabConstant.INDEX_PAYMENT_METHOD
 import tokyo.randx.cutie.hab.CutieHabConstant.INDEX_YEAR
+import tokyo.randx.cutie.hab.CutieHabConstant.SAVINGS_EN
+import tokyo.randx.cutie.hab.CutieHabConstant.SAVINGS_JP
+import tokyo.randx.cutie.hab.CutieHabConstant.SAVINGS_ZH
 import tokyo.randx.cutie.util.CutieConstant.REGEX_PATTERN_NUMBER
 import tokyo.randx.cutie.util.CutieDateTimeUtil.formatDate
 import tokyo.randx.cutie.util.CutieDateTimeUtil.formatTime
 import tokyo.randx.cutie.util.FormatUtil.formatZerosLeadingNumber
 
 object CutieHabUtil {
-
-    fun filterRecordByCategory(
-        record: List<CutieHabRecord>, categoryId: Int
-    ): List<CutieHabRecord> = record.filter { it.categoryId==categoryId }
 
     fun filterRecordByUser(
         record: List<CutieHabRecord>, uid: Int
@@ -45,8 +44,16 @@ object CutieHabUtil {
     fun filterRecordByPaymentMethod(
         record: List<CutieHabRecord>, paymentMethodId: Int
     ): List<CutieHabRecord> = record.filter { it.paymentMethodId==paymentMethodId }
+    fun filterRecordByCategory(record: List<CutieHabRecord>, categoryId: Int): List<CutieHabRecord> = record.filter { it.categoryId == categoryId }
 
+//    fun filterRecordByAccount(record: List<CutieHabRecord>, accountId: Int): List<CutieHabRecord> = record.filter { it.accountId == accountId }
 
+    fun getCategoryIcon(category: String): String {
+        return when (category) {
+            SAVINGS_JP, SAVINGS_ZH, SAVINGS_EN -> "savings"
+            else -> "cutie"
+        }
+    }
     // TODO for show record by Category
     fun sortRecordByCategory(record: List<CutieHabRecord>): Map<Int, List<CutieHabRecord>> {
         val recordByCategory = mutableMapOf<Int, MutableList<CutieHabRecord>>()
@@ -69,17 +76,21 @@ object CutieHabUtil {
         TODO("Not yet implemented")
     }
 
-    fun getTotalAmountListByUser(record: List<CutieHabRecord>): List<Int> {
-        val totalAmountMap = mutableMapOf<Int, Int>()
+//    fun getTotalAmountListByUser(record: List<CutieHabRecord>): List<Int> {
+//        val totalAmountMap = mutableMapOf<Int, Int>()
+//
+//        record.forEach {
+//            totalAmountMap[it.uid] = totalAmountMap.getOrElse(it.uid) { 0 } + it.amount
+//        }
+//
+//        return totalAmountMap.values.toList()
+//    }
 
-        record.forEach {
-            totalAmountMap[it.uid] = totalAmountMap.getOrElse(it.uid) { 0 } + it.amount
-        }
+//    fun calculateTotalAmount(record: List<CutieHabRecord>): Int = record.sumOf { it.amount }
 
-        return totalAmountMap.values.toList()
-    }
+    fun calculateTotalAmount(amount: List<Double>): Double = amount.sumOf { it }
 
-    fun getTotalAmount(record: List<CutieHabRecord>): Int = record.sumOf { it.amount }
+    fun calculateTotalAmount(amount: List<Int>): Int = amount.sumOf { it }
 
     fun isValidRecord(record: CutieHabRecord): Boolean {
         return record.id==generateRecordId(record) && record.amount!=0
@@ -96,6 +107,7 @@ object CutieHabUtil {
             record.paymentMethodId, INDEX_AMOUNT - INDEX_PAYMENT_METHOD
         ) + formatZerosLeadingNumber(record.amount, INDEX_END - INDEX_AMOUNT)
     }
+// TODO old format
 
     fun generateRecordId(
         date: String, time: String, categoryId: Int, uid: Int, paymentMethodId: Int, amount: Int
@@ -122,7 +134,7 @@ object CutieHabUtil {
     }
 
     fun parseDate(recordId: String): String {
-        if (recordId.length!=INDEX_END) return String()
+        if (recordId.length != INDEX_END) return String()
 
         return formatDate(
             recordId.substring(INDEX_YEAR, INDEX_MONTH).toInt(),

@@ -48,8 +48,6 @@
 		7E5E43C72C0601F400B36951 /* CutieDatetime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E43C62C0601F400B36951 /* CutieDatetime+Extension.swift */; };
 		7E750858270C7D2A0001A5FF /* CutieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E750857270C7D2A0001A5FF /* CutieView.swift */; };
 		7E925EBE2B2AE21D0038B04A /* CutieAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E925EBD2B2AE21D0038B04A /* CutieAppState.swift */; };
-		7EB039022BD876F000282867 /* CutieHabCoinBankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB039012BD876F000282867 /* CutieHabCoinBankViewModel.swift */; };
-		7EB039062BD87AA600282867 /* CutieHabCoinBankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB039052BD87AA600282867 /* CutieHabCoinBankView.swift */; };
 		7EB0390A2BD87C6E00282867 /* CutieHabExpenseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB039092BD87C6E00282867 /* CutieHabExpenseListView.swift */; };
 		7EB0390C2BD87D0B00282867 /* CutieHabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0390B2BD87D0B00282867 /* CutieHabViewModel.swift */; };
 		7ED1CEA82705DF1700035C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1CEA72705DF1700035C8B /* Assets.xcassets */; };
@@ -79,8 +77,6 @@
 		7E5E43C62C0601F400B36951 /* CutieDatetime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CutieDatetime+Extension.swift"; sourceTree = "<group>"; };
 		7E750857270C7D2A0001A5FF /* CutieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutieView.swift; sourceTree = "<group>"; };
 		7E925EBD2B2AE21D0038B04A /* CutieAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutieAppState.swift; sourceTree = "<group>"; };
-		7EB039012BD876F000282867 /* CutieHabCoinBankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutieHabCoinBankViewModel.swift; sourceTree = "<group>"; };
-		7EB039052BD87AA600282867 /* CutieHabCoinBankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutieHabCoinBankView.swift; sourceTree = "<group>"; };
 		7EB039092BD87C6E00282867 /* CutieHabExpenseListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutieHabExpenseListView.swift; sourceTree = "<group>"; };
 		7EB0390B2BD87D0B00282867 /* CutieHabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutieHabViewModel.swift; sourceTree = "<group>"; };
 		7ED1CEA72705DF1700035C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,7 +171,6 @@
 		7E34E3242A1A2CD300B03320 /* Hab */ = {
 			isa = PBXGroup;
 			children = (
-				7EB039072BD87AD900282867 /* CoinBank */,
 				7EE3D0802ADE846C00232E87 /* Data */,
 				7E5E43C52C0601AE00B36951 /* Extension */,
 				7EB039082BD87AED00282867 /* Expense */,
@@ -238,15 +233,6 @@
 				7E5E43C62C0601F400B36951 /* CutieDatetime+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		7EB039072BD87AD900282867 /* CoinBank */ = {
-			isa = PBXGroup;
-			children = (
-				7EB039052BD87AA600282867 /* CutieHabCoinBankView.swift */,
-				7EB039012BD876F000282867 /* CutieHabCoinBankViewModel.swift */,
-			);
-			path = CoinBank;
 			sourceTree = "<group>";
 		};
 		7EB039082BD87AED00282867 /* Expense */ = {
@@ -430,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EB039022BD876F000282867 /* CutieHabCoinBankViewModel.swift in Sources */,
 				7E51E5C72C157CC000CD2156 /* CutieHabExpenseNewEditViewModel.swift in Sources */,
 				7E51E5CE2C1582E100CD2156 /* CutieHabExpenseCategoryRepository.swift in Sources */,
 				7E550FDE2AE63452002D58DA /* CutieApp.swift in Sources */,
@@ -449,7 +434,6 @@
 				7E5E43C72C0601F400B36951 /* CutieDatetime+Extension.swift in Sources */,
 				7EB0390A2BD87C6E00282867 /* CutieHabExpenseListView.swift in Sources */,
 				7E51E5D02C15B5B000CD2156 /* CutieHabExpenseDetailsViewModel.swift in Sources */,
-				7EB039062BD87AA600282867 /* CutieHabCoinBankView.swift in Sources */,
 				7E51E5C92C157D9E00CD2156 /* CutieHabExpenseItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
