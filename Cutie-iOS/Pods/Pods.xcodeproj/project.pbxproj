@@ -17,6 +17,7 @@
 			dependencies = (
 			);
 			name = CutieCore;
+			productName = CutieCore;
 		};
 /* End PBXAggregateTarget section */
 
@@ -38,18 +39,18 @@
 
 /* Begin PBXFileReference section */
 		09A9862D40DFC19AC4AB51C85CE6F320 /* CutieCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.release.xcconfig; sourceTree = "<group>"; };
-		0DD41A157421499E1EA9334DD4998DEA /* CutieCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CutieCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0DD41A157421499E1EA9334DD4998DEA /* CutieCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CutieCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		24D17D10C5A46EAD6382D94F90196127 /* Pods-Cutie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cutie-umbrella.h"; sourceTree = "<group>"; };
 		3F51602DA6C37C4DD7F0BD263C478BD2 /* Pods-Cutie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.debug.xcconfig"; sourceTree = "<group>"; };
 		5AC2B1886B02763711A54843AF75D8CC /* Pods-Cutie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cutie-acknowledgements.markdown"; sourceTree = "<group>"; };
-		60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Cutie"; path = Pods_Cutie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cutie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6243111ECD40A361996736900C626536 /* Pods-Cutie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-Info.plist"; sourceTree = "<group>"; };
 		6B20A9C5B8FE5592E6CAB0DCF3E93419 /* Pods-Cutie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cutie-acknowledgements.plist"; sourceTree = "<group>"; };
 		714B88FF51E0B2547A01BA608266F802 /* Pods-Cutie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cutie-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80EB8755A3CFF96BE9A3A7A43EF3DBBF /* CutieCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CutieCore.debug.xcconfig; sourceTree = "<group>"; };
 		8C690273D3B767D0B7E6C6C837E1E778 /* Pods-Cutie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cutie.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D83CD7C7B4CF4F28EFE577B2678A9BAD /* Pods-Cutie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cutie-frameworks.sh"; sourceTree = "<group>"; };
 		E492AC3FFC8850C4AEB0803168D00DFB /* CutieCore-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CutieCore-copy-dsyms.sh"; sourceTree = "<group>"; };
 		F612C35848B398B5A5438A7677B54C50 /* Pods-Cutie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cutie.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +91,7 @@
 		42DF06D92B09C80658E413327EB6E38B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */,
+				60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,7 +205,7 @@
 			);
 			name = "Pods-Cutie";
 			productName = Pods_Cutie;
-			productReference = 60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods-Cutie */;
+			productReference = 60C3110E0830A3FEAFB64DC3D0CF73E7 /* Pods_Cutie.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
